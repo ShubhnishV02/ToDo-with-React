@@ -1,38 +1,135 @@
 .App {
   text-align: center;
+  padding: 1.5rem 0;
+  height: 95vh;
+  background-image: url('images/IMG-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Apph {
+  text-align: center;
+  padding: 1.5rem 0;
+  height: 100%;
+  background-image: url('images/IMG-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h1 {
+  font-size: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 70%;
+  margin: 1rem auto;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+form input {
+  height: 40px;
+  flex-basis: 80%;
+  padding: 0 10px;
+}
+form button {
+  height: 40px;
+  flex-basis: 20%;
+  border: 2px solid rgb(187, 186, 186);
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.outerdiv{
+  width: 70%;
+  margin: auto;
+}
+.outerdiv ul{
+  list-style: none;
+  margin-top: 2.2rem;
+}
+.outerdiv ul div{
+  display: flex;
+}
+.outerdiv ul li{
+  width: 90%;
+  padding: 7px 1.5rem;
+  padding-bottom: 11px;
+  font-size: 25px;
+  position: relative;
+  text-align: left;
+  background-color: black;
   color: white;
+  margin-bottom: 0.4rem;
+}
+.outerdiv ul  h6{
+  font-size: 30px;
+  width: 10%;
+  float: inline-end;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 5px 0rem;
+  padding-bottom: 11px;
+  margin-bottom: 0.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.completeToDo{
+  position: fixed;
+  text-decoration: line-through;
+  color: red !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.hr{
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 14.5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .App {
+    text-align: center;
+    padding: 1.5rem 0;
+    height: 95vh;
+    background-image: url('images/IMG-bg.webp');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  to {
-    transform: rotate(360deg);
+  .Apph {
+    text-align: center;
+    padding: 1.5rem 0;
+    height: 100%;
+    background-image: url('images/IMG-bg.webp');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
